@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AnimationView.h"
+#import "Masonry.h"
+#import "CABasicAnimationView.h"
 
 @interface ViewController ()
 
@@ -16,7 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    AnimationView *ani = [AnimationView new];
+//    [self.view addSubview:ani];
+//    [ani mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(0);
+//    }];
+    
+    CABasicAnimationView *basicAnimationView = [CABasicAnimationView new];
+    [self.view addSubview:basicAnimationView];
+    
+    [basicAnimationView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
 }
 
 
