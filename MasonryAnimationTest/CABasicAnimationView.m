@@ -1,10 +1,4 @@
-//
-//  CABasicAnimationView.m
-//  MasonryAnimationTest
-//
-//  Created by guodongdong on 2019/5/30.
-//  Copyright © 2019 guodongdong. All rights reserved.
-//
+
 
 #import "CABasicAnimationView.h"
 #import "Masonry.h"
